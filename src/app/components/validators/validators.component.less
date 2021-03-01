@@ -1,0 +1,17 @@
+p {
+    font-size: 1.5rem;
+}
+
+
+// в inspect element, в каждой форме есть определенные boolean классы,
+// которым можно задавать стили
+input {
+    // &.ng-invalid.ng-touched означает and
+    &.ng-invalid.ng-touched {
+        border: 1px solid red;
+    }
+
+    &.ng-valid.ng-touched {
+        border: 1px solid green;
+    }
+}

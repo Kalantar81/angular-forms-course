@@ -1,0 +1,9 @@
+<div>
+    <app-child 
+        [(ngModel)]="appState"
+        (ngModelChange)="handleChange()">
+    </app-child>
+    <hr>
+    
+    <p>appState: {{appState}}</p>
+</div>
